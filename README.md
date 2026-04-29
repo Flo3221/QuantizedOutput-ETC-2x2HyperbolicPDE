@@ -3,7 +3,7 @@
 ## Description
 
 QuantizedOutput-ETC-2x2HyperbolicPDE is a MATLAB/Simulink project developed to illustrate the concepts presented in the paper
-**"Output Quantization Compensation in Event-Triggered Backstepping Control of 2×2 Hyperbolic Systems"** (submitted).
+**"Output Quantization Compensation in Event-Triggered Backstepping Control of 2×2 Hyperbolic Systems"** ([Hal version](https://hal.science/hal-05570991/)).
 
 This project simulates a 2×2 first-order linear hyperbolic PDE system under **observer-based boundary control**, where the collocated output measurement is subject to **dynamic output quantization**. The control and observer gains are computed via the backstepping method. The control input is updated only at **event-triggered** (ETC) or **self-triggered** (STC) time instants, reducing actuation solicitation while guaranteeing semiglobal exponential stability in the sup-norm.
 
@@ -38,7 +38,7 @@ Follow these steps to set up the project:
 
 Run the scripts in the following order after downloading the project:
 
-**Step 1 — Compute kernels and build the system matrices:**
+**Step 1: Compute kernels and build the system matrices:**
 
 ```matlab
 run('q2x2simu.m')
@@ -49,7 +49,7 @@ observer kernels `P` (`kernelso.m`), and their inverses `L` (`kernelscinv.m`),
 `R` (`kernelsoinv.m`) via polynomial power series of order `N = 13`. Builds the
 finite-difference matrices `A`, `Ao`, `B`, `Bo`, `C` and sets the initial conditions.
 
-**Step 2 — Compute theoretical bounds:**
+**Step 2: Compute theoretical bounds:**
 
 ```matlab
 run('bounds.m')
@@ -71,7 +71,7 @@ Runs the observer-based event-triggered closed-loop. Then generate figures:
 run('plots.m')
 ```
 
-**Step 3b — Run the STC closed-loop simulation:**
+**Step 3b: Run the STC closed-loop simulation:**
 
 ```matlab
 out = sim('selft_of_q2x2sim.slx');
@@ -83,7 +83,7 @@ Runs the observer-based self-triggered closed-loop. Then generate figures:
 run('STCplots.m')
 ```
 
-**Step 4 — Inter-event time histogram (optional):**
+**Step 4: Inter-event time histogram (optional):**
 
 ```matlab
 run('histogrametc.m')

@@ -189,6 +189,6 @@ If you use this code in your research, please cite:
              Control of {2$\times$2} Hyperbolic Systems},
   author  = {Koudohode, F. and Espitia, N. and Humaloja, J.-P. and Bekiaris-Liberis, N.},
   journal = {under review},
-  year    = {2025}
+  year    = {2026}
 }
 ```

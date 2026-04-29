@@ -12,7 +12,7 @@ This project simulates:
 - A 2×2 linear hyperbolic PDE system under **observer-based event-triggered boundary control** with dynamic output quantization (`q2x2sim.slx`).
 - A 2×2 linear hyperbolic PDE system under **observer-based self-triggered boundary control** with dynamic output quantization (`selft_of_q2x2sim.slx`).
 
-For detailed equations, backstepping kernel derivations, stability results, and parameter choices, please refer to the associated paper and ([mathematical details](https://tucgr-my.sharepoint.com/:b:/g/personal/fkoudohode_tuc_gr/IQAnmUwTMskQR7sLvugJRk1HAV8_9Rr44MHj5R2s6h0ikRI?e=99WzEn)).
+For detailed equations, backstepping kernel derivations, stability results, and parameter choices, please refer to the associated paper and ([mathematical details](https://tucgr-my.sharepoint.com/:b:/g/personal/fkoudohode_tuc_gr/IQBS_LOEAIaCRKQU11gKTBNUAWfSL0EagbnxndpYgJN1eQ8?e=tXzaq1)).
 
 ## Requirements
 
